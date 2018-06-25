@@ -46,3 +46,18 @@ After you’ve created and activated a virtual environment, enter the command:
 ```bash
 pip install Django
 ```
+
+### Verifying
+To verify that Django can be seen by Python, type `python` from your shell. Then at the Python prompt, try to import Django:
+```python3
+>>> import django
+>>> print(django.get_version())
+2.0
+```
+
+
+## The development server
+Let’s verify your Django project works. Change into the outer mysite directory, if you haven’t already, and run the following commands:
+```bash
+python manage.py runserver
+```
