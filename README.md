@@ -14,13 +14,13 @@ python get-pip.py
 
 #### Upgrading pip
 - On Linux or macOS:
-```bash
-pip install -U pip
-```
+  ```bash
+  pip install -U pip
+  ```
 - On Windows:
-```bash
-python -m pip install -U pip
-```
+  ```bash
+  python -m pip install -U pip
+  ```
 
 #### Install and setup Virtualenv
 To install globally with pip:
@@ -33,13 +33,13 @@ virtualenv env
 ```
 In a newly created virtualenv there will also be a activate shell script.
 - On Posix systems,
-```bash
-source env/bin/activate
-```
+  ```bash
+  source env/bin/activate
+  ```
 - For Windows systems, activation scripts are provided for the Command Prompt and Powershell:
-```bash
-> \path\to\env\Scripts\activate
-```
+  ```bash
+  > \path\to\env\Scripts\activate
+  ```
 
 #### Install Django
 After you’ve created and activated a virtual environment, enter the command:
