@@ -26,7 +26,7 @@ with open('../secret_key.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://0.0.0.0:8000/']
 
 
 # Application definition
