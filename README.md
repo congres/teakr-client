@@ -2,6 +2,8 @@
 
 ## Installation
 
+alias python='/usr/bin/python3.x'
+
 #### Install pip if needed:
 To install pip, download get-pip.py.
 ```bash
@@ -15,7 +17,7 @@ python get-pip.py
 #### Upgrading pip
 - On Linux or macOS:
   ```bash
-  pip install -U pip
+  python -m pip install -U pip
   ```
 - On Windows:
   ```bash
@@ -25,11 +27,11 @@ python get-pip.py
 #### Install and setup Virtualenv
 To install globally with pip:
 ```bash
-pip install virtualenv
+python -m pip install virtualenv --user
 ```
 Virtualenv has one basic command to setup the virtual environnment:
 ```bash
-virtualenv env
+path/to/packages/virtualenv env
 ```
 In a newly created virtualenv there will also be a activate shell script.
 - On Posix systems,
