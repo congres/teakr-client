@@ -61,3 +61,6 @@ Let’s verify your Django project works. Change into the outer mysite directory
 ```bash
 python manage.py runserver
 ```
+
+## How to use Django with uWSGI
+uWSGI is a fast, self-healing and developer/sysadmin-friendly application container server coded in pure C.
