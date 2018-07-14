@@ -3,3 +3,4 @@ env
 __pycache__
 secret_key.txt
 .DS_Store
+duck.sh
