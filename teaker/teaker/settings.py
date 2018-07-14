@@ -26,7 +26,7 @@ with open('../secret_key.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.1.23', '5.51.51.180']
+ALLOWED_HOSTS = ['192.168.1.23', '5.51.51.180', 'teakr.duckdns.org']
 
 
 # Application definition
