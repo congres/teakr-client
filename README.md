@@ -61,8 +61,30 @@ To verify that Django can be seen by Python, type `python` from your shell. Then
 ## The development server
 Let’s verify your Django project works. Change into the outer mysite directory, if you haven’t already, and run the following commands:
 ```bash
-python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
 ```
 
-## How to use Django with uWSGI
+## Local to global access: Port Forwarding
+- add IP in `ALLOWED_HOSTS` in `settings.py`
+- enable portfowarding in your personnal router
+
+## IP to FQDN: Dynamic DNS
+- Duckdns inscription
+- ./duck.sh
+
+## Prod Deployment
+### How to use Django with uWSGI
 uWSGI is a fast, self-healing and developer/sysadmin-friendly application container server coded in pure C.
+
+```bash
+pip install uwsgi
+uwsgi --http :8000 --module teaker.wsgi
+```
+
+## Basic nginx
+```bash
+sudo apt-get install nginx
+sudo /etc/init.d/nginx start    # start nginx
+```
+
+You will need the uwsgi_params file, which is available in the nginx directory of the uWSGI distribution, or from https://github.com/nginx/nginx/blob/master/conf/uwsgi_params

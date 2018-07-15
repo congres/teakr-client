@@ -1,7 +1,11 @@
-body {
+/* body {
     background: white url("/static/images/background.gif") no-repeat;
 }
 
 li a {
     color: green;
+} */
+body
+{
+    background-color: blue;
 }
