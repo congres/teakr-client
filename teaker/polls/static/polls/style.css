@@ -1,9 +1,9 @@
 body {
-    background: white url("/static/images/background.gif") no-repeat;
+    background: white url("/static/polls/images/background.gif") no-repeat;
 }
 
 li a {
-    color: green;
+    color: orange;
 }
 /* body
 {
